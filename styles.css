@@ -712,6 +712,88 @@ nav {
     border-color: #006633;
 }
 
+
+
+/* Footer Section */
+.humlog-footer {
+    background-color: #004d26;
+    /* Dark green background */
+    padding: 40px 20px;
+    color: #b5c0ab;
+    /* Light gray text color */
+    font-family: 'Arial', sans-serif;
+}
+
+.humlog-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.humlog-footer-logo img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.humlog-footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.humlog-footer-column {
+    flex: 1;
+    text-align: center;
+}
+
+.humlog-footer-heading {
+    font-size: 1em;
+    color: #ffffff;
+    /* White text for headings */
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.humlog-footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.humlog-footer-list li {
+    margin-bottom: 10px;
+}
+
+.humlog-footer-link {
+    color: #b5c0ab;
+    /* Light gray text color */
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.humlog-footer-link:hover {
+    color: #e0e5dc;
+    /* Slightly lighter gray on hover */
+}
+
+.humlog-footer-bottom {
+    text-align: center;
+    font-size: 0.8em;
+    color: #b5c0ab;
+    /* Light gray text color */
+}
+
+.humlog-footer-copyright {
+    margin: 0;
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -773,7 +855,6 @@ nav {
     }
 
     .humlog-footer-links {
-        flex-direction: column;
         align-items: center;
     }
 
@@ -862,90 +943,6 @@ nav {
 }
 
 
-
-/*  */
-/* Footer Section */
-.humlog-footer {
-    background-color: #004d26;
-    /* Dark green background */
-    padding: 40px 20px;
-    color: #b5c0ab;
-    /* Light gray text color */
-    font-family: 'Arial', sans-serif;
-}
-
-.humlog-footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.humlog-footer-logo img {
-    width: 40px;
-    margin-bottom: 20px;
-}
-
-.humlog-footer-links {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 30px;
-}
-
-.humlog-footer-column {
-    flex: 1;
-    text-align: center;
-}
-
-.humlog-footer-heading {
-    font-size: 1em;
-    color: #ffffff;
-    /* White text for headings */
-    margin-bottom: 15px;
-    font-weight: normal;
-}
-
-.humlog-footer-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.humlog-footer-list li {
-    margin-bottom: 10px;
-}
-
-.humlog-footer-link {
-    color: #b5c0ab;
-    /* Light gray text color */
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: color 0.3s ease;
-}
-
-.humlog-footer-link:hover {
-    color: #e0e5dc;
-    /* Slightly lighter gray on hover */
-}
-
-.humlog-footer-bottom {
-    text-align: center;
-    font-size: 0.8em;
-    color: #b5c0ab;
-    /* Light gray text color */
-}
-
-.humlog-footer-copyright {
-    margin: 0;
-}
-
-
-
-
-
 @media (max-width: 480px) {
     .nav_links_item {
         display: none;
@@ -1004,6 +1001,10 @@ nav {
     }
 
     .split-content-section {
+        padding: 20px 10px;
+    }
+
+    .humlog-footer {
         padding: 20px 10px;
     }
 }

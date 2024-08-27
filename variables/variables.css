@@ -1,0 +1,26 @@
+:root {
+    /* Primary Color */
+    --primary-color: #800020;
+
+    /* Secondary Color */
+    --secondary-color: #FFD700;
+
+    /* Accent Color */
+    --accent-color: #F7E7CE;
+
+    /* Neutral Color */
+    --neutral-color: #FFFDD0;
+
+    /* Text Color */
+    --text-color: #191970;
+
+    /* Additional Colors */
+    --header-footer-bg: var(--primary-color);
+    --background-color: var(--neutral-color);
+    --button-bg: var(--accent-color);
+    --button-text: var(--text-color);
+    --heading-color: var(--primary-color);
+    --subheading-color: var(--secondary-color);
+    --link-color: var(--primary-color);
+    --link-hover-color: var(--secondary-color);
+}

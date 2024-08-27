@@ -163,6 +163,7 @@ nav {
 
 .experiences .section-subtitle {
     font-size: 16px;
+    width: 100%;
     color: #9D9C9D;
 }
 
@@ -253,7 +254,6 @@ nav {
 .experience-section {
     padding: 60px 40px;
     background-color: #fef7ec;
-    /* Light beige background */
     font-family: 'Arial', sans-serif;
 }
 
@@ -723,6 +723,10 @@ nav {
         max-width: 100%;
     }
 
+    .left-content {
+        padding: 25px;
+    }
+
     .left-content h2,
     .right-content h3 {
         font-size: 1.8em;
@@ -733,13 +737,7 @@ nav {
     .book-event-link {
         font-size: 1.1em;
     }
-}
 
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
@@ -748,32 +746,11 @@ nav {
     .text-content {
         max-width: 100%;
     }
-}
 
-@media (max-width: 480px) {
-    .text-content h2 {
-        font-size: 1.5em;
+    .experiences .section-title {
+        margin-bottom: 0px;
     }
 
-    .text-content p {
-        font-size: 1.1em;
-    }
-
-    .book-now-btn {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
@@ -793,6 +770,94 @@ nav {
 
     .right-content p {
         font-size: 1.1em;
+    }
+
+    .humlog-footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .humlog-footer-column {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .image-content,
+    .text-content {
+        max-width: 100%;
+    }
+
+    .text-content h2 {
+        font-size: 1.5em;
+    }
+
+    .text-content p {
+        font-size: 1.1em;
+    }
+
+    .upper-content {
+        flex-direction: column;
+    }
+
+    .left-content,
+    .right-content {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .cta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .discover-btn,
+    .book-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .experience-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .experience-section {
+        padding: 40px 27px;
+    }
+
+    .split-content-section {
+        padding: 40px 27px;
     }
 }
 
@@ -877,125 +942,9 @@ nav {
     margin: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .humlog-footer-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .humlog-footer-column {
-        margin-bottom: 20px;
-    }
-}
-
-/*  */
 
 
 
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .image-content,
-    .text-content {
-        max-width: 100%;
-    }
-
-    .text-content h2 {
-        font-size: 1.5em;
-    }
-
-    .text-content p {
-        font-size: 1.1em;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .upper-content {
-        flex-direction: column;
-    }
-
-    .left-content,
-    .right-content {
-        max-width: 100%;
-    }
-
-    .cta-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .cta-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .lower-gallery {
-        flex-direction: column;
-    }
-
-    .lower-gallery img {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .experience-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    .discover-btn,
-    .book-btn {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .experience-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-}
 
 @media (max-width: 480px) {
     .nav_links_item {
@@ -1016,5 +965,45 @@ nav {
 
     .hero p {
         font-size: 0.9em;
+    }
+
+    .text-content h2 {
+        font-size: 1.5em;
+    }
+
+    .text-content p {
+        font-size: 1.1em;
+    }
+
+    .book-now-btn {
+        width: 100%;
+    }
+
+    .experiences .section-title {
+        margin-bottom: 0px;
+    }
+
+    .cta-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lower-gallery {
+        flex-direction: column;
+    }
+
+    .lower-gallery img {
+        width: 100%;
+    }
+
+    .experience-section {
+        padding: 20px 10px;
+    }
+
+    .left-content {
+        border-radius: 10px;
+    }
+
+    .split-content-section {
+        padding: 20px 10px;
     }
 }

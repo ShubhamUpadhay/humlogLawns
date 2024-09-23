@@ -1,12 +1,27 @@
 const exploreBtn = document.getElementById("explore-btn");
-exploreBtn.addEventListener("click", () => {
-  alert("abhi bna rha hu bhai ruk ja");
+
+document.getElementById("explore-btn").addEventListener("click", function () {
+  document
+    .getElementById("exploreSection")
+    .scrollIntoView({ behavior: "smooth" });
 });
 
-const home = document.getElementById("nav_home");
-home.addEventListener("click", () => {
-  alert("teri maa ki");
+document.getElementById("home-button").addEventListener("click", function () {
+  document.getElementById("homeSection").scrollIntoView({ behavior: "smooth" });
 });
+
+document.getElementById("discover-btn").addEventListener("click", function () {
+  document
+    .getElementById("experience-section")
+    .scrollIntoView({ behavior: "smooth" });
+});
+
+document.getElementById("book-btn").addEventListener("click", function () {
+  document
+    .getElementById("packagesAndPricingSection")
+    .scrollIntoView({ behavior: "smooth" });
+});
+
 window.addEventListener("scroll", function () {
   const header = document.getElementById("navbar");
   const hero = document.querySelector(".hero");

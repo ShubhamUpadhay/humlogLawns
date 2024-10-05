@@ -17,6 +17,7 @@ document.getElementById("explore-btn").addEventListener("click", function () {
 
 document.getElementById("home-button").addEventListener("click", function () {
   document.getElementById("homeSection").scrollIntoView({ behavior: "smooth" });
+  alert("hello test ");
 });
 
 document.getElementById("discover-btn").addEventListener("click", function () {

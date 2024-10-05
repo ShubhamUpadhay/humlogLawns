@@ -57,6 +57,47 @@ header.sticky .explore-btn {
     border-radius: 25px;
 }
 
+header.sticky .explore-btn:hover {
+    background-color: #004d26;
+    color: #fff;
+    border-color: #fff;
+}
+
+.hamburger {
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: all 0.3s ease;
+    border-radius: 30%;
+}
+
+header.sticky .bar {
+    background-color: #fff;
+}
+
+.open .bar1 {
+    transform: rotate(45deg) translate(7px, 10px);
+}
+
+.open .bar2 {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.open .bar3 {
+    transform: rotate(-45deg) translate(4px, -7px);
+}
+
 #nav-items-conatiner {
     display: flex;
     justify-content: flex-end;
@@ -121,6 +162,7 @@ nav {
 
 .explore-btn:hover {
     background-color: #006633;
+    color: #004d26;
 }
 
 /* Hero Section Styling */
@@ -515,8 +557,8 @@ nav {
     margin-bottom: 20px;
 }
 
-.explore-btn {
-    padding: 10px 20px;
+/* .explore-btn { */
+/* padding: 10px 20px;
     font-size: 1em;
     color: #4b5e51;
     background-color: transparent;
@@ -524,7 +566,7 @@ nav {
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
+} */
 
 .explore-btn:hover {
     background-color: #f1f1f1;
@@ -959,12 +1001,20 @@ nav {
 
 
 @media (max-width: 480px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        padding: 0;
+    }
+
     .nav_links_item {
         display: none;
     }
 
     header {
-        padding: 10px 15px;
+        padding: 5px 7.5px;
     }
 
     .hero {
@@ -977,6 +1027,26 @@ nav {
 
     .hero p {
         font-size: 0.9em;
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    header.sticky .logo {
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+    }
+
+    header.sticky .logo img {
+        height: 30px;
     }
 
     .text-content h2 {
@@ -1026,5 +1096,10 @@ nav {
     .humlog-footer-logo img {
         width: 200px;
 
+    }
+
+    header.sticky .explore-btn {
+        padding: 10px 15px;
+        font-size: 0.8rem;
     }
 }

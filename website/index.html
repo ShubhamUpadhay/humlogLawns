@@ -6,14 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humlog Lawns</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="havNavcss.css">
     <script defer src="./script.js"></script>
+    <script defer src="../otherScripts/hamburgerScript.js"></script>
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c6fa9ee0b8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header id="navbar">
         <nav>
-            <div class="logo" id="home-button">
-                <img src="./assets/imgs/logo.png" alt="Humlog Lawns Logo">
+            <div style="display: flex; justify-content: space-evenly;align-items: center;">
+                <div class="hamburger" id="hamburgerMenu">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                <div class="logo" id="home-button">
+                    <img src="./assets/imgs/logo.png" alt="Humlog Lawns Logo">
+                </div>
             </div>
             <div id="nav-items-conatiner">
                 <ul class="nav-links">
@@ -23,9 +37,34 @@
                     <li class="nav_links_item"><a href="#contactUsSection">Contact</a></li>
                     <li><button class="explore-btn" id="explore-btn">Explore</button></li>
                 </ul>
-
-            </div>
         </nav>
+        <div id="navDrawer" class="starsMov slideStyleOut">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="navDiv">
+                <a href="#" class="HamNavA">
+                    <div class="hamNavItem">
+                        <p class="hamNavItemName">Home</p>
+                    </div>
+                </a>
+                <a href="#experiences" class="HamNavA">
+                    <div class="hamNavItem">
+                        <p class="hamNavItemName">About</p>
+                    </div>
+                </a>
+                <a href="#experience-section" class="HamNavA">
+                    <div class="hamNavItem">
+                        <p class="hamNavItemName">Events</p>
+                    </div>
+                </a>
+                <a href="#contactUsSection" class="HamNavA">
+                    <div class="hamNavItem">
+                        <p class="hamNavItemName">Contact Us</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </header>
 
     <section class="hero" id="homeSection">

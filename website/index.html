@@ -7,11 +7,12 @@
     <title>Humlog Lawns</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="havNavcss.css">
+    <link rel="stylesheet" href="otherCss/contactUsOverlaySection.css">
     <script defer src="./script.js"></script>
     <script defer src="./otherScripts/hamburgerScript.js"></script>
-
+    <script defer src="./otherScripts/contactUsOverlay.js"></script>
+    <script defer src="./otherScripts/contactFunctions.js"></script>
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
-
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/c6fa9ee0b8.js" crossorigin="anonymous"></script>
 </head>
@@ -34,8 +35,8 @@
                     <li class="nav_links_item" id="nav_home"><a href="#">Home</a></li>
                     <li class="nav_links_item"><a href="#experiences">About</a></li>
                     <li class="nav_links_item"><a href="#experience-section">Events</a></li>
-                    <li class="nav_links_item"><a href="#contactUsSection">Contact</a></li>
-                    <li><button class="explore-btn" id="explore-btn">Explore</button></li>
+                    <li class="nav_links_item" id="contactUsDwebBtn"><a>Contact</a></li>
+                    <li><button class=" explore-btn" id="explore-btn">Explore</button></li>
                 </ul>
         </nav>
         <div id="navDrawer" class="starsMov slideStyleOut">
@@ -65,221 +66,241 @@
                 </a>
             </div>
         </div>
+        <div class="contactUsOverlaySection" id="contactUsOverlaySection">
+            <button id="contactUsOverlaySectionCloseBtn">x</button>
+            <div>
+                <button class="call-btn" id="call-btn"> <i class="fas fa-phone-alt"></i> Call us</button>
+                <button class="whatsapp-btn" id="whatsapp-btn"><i class="fab fa-whatsapp"></i> Whatsapp</button>
+            </div>
+        </div>
     </header>
-
-    <section class="hero" id="homeSection">
-        <div class="hero-content">
-            <h1>Welcome to <br> Humlog Lawns </h1>
-            <p style="color: #f7f7f7dd;font-weight: 500;">Where Dream Weddings Blossom into Lifelong Memories</p>
-            <div class="hero-buttons">
-                <button class="btn" id="discover-btn">Discover More</button>
-                <button class="btn" id="book-btn">Book Your Event</button>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="experiences" id="experiences">
-        <div class="container">
-            <h2 class="section-subtitle">Immerse Yourself in the Beauty of Our Expansive Lawns</h2>
-            <h1 class="section-title">Crafting Unforgettable Experiences Since Inception</h1>
-            <div class="experience-cards">
-                <div class="card">
-
-                    <div class="imageDiv" style="  background: url('./assets/imgs/21.webp') center/cover no-repeat;">
-                    </div>
-                    <div class="card-content">
-                        <p>Imagine your dream wedding or special event unfolding against the backdrop of our lush,
-                            well-manicured lawns. Our picturesque setting provides the perfect canvas for creating</p>
-                        <span>Elevate your gatherings</span>
-                    </div>
-                </div>
-                <div class="card">
-
-                    <div class="imageDiv" style="  background: url('./assets/imgs/22.webp') center/cover no-repeat;">
-                    </div>
-
-                    <div class="card-content">
-                        <p>Experience the tranquility of our backyard oasis, complete with a charming table and chairs
-                            setup
-                            - the ideal spot for intimate gatherings and alfresco dining</p>
-                        <span>Indulge in the relaxed</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <!-- <img src="./assets/imgs/23.webp" alt="Lawn Experience 3"> -->
-                    <div class="imageDiv" style="  background: url('./assets/imgs/23.webp') center/cover no-repeat;">
-                    </div>
-                    <div class="card-content">
-                        <p>Explore the versatility of our lawns, where a golf cart adorned with a vibrant red umbrella
-                            adds
-                            a touch of whimsy to your event</p>
-                        <span>Discover the endless</span>
-                    </div>
+    <main>
+        <section class="hero" id="homeSection">
+            <div class="hero-content">
+                <h1>Welcome to <br> Humlog Lawns </h1>
+                <p style="color: #f7f7f7dd;font-weight: 500;">Where Dream Weddings Blossom into Lifelong Memories</p>
+                <div class="hero-buttons">
+                    <button class="btn" id="discover-btn">Discover More</button>
+                    <button class="btn" id="book-btn">Book Your Event</button>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="experience-section" id="experience-section">
-        <div class="experience-container">
-            <div class="upper-content">
-                <div class="left-content">
-                    <h2>Crafting Unforgettable Experiences: <br> Humlog Lawns Redefines Event Elegance</h2>
-                    <div class="description-box">
-                        <div class="description-header">
-                            <h3>Indulge in the Beauty</h3>
-                            <div class="icon">
-                                <img src="./assets/imgs/logo.png" alt="Icon">
+        </section>
+        <section class="experiences" id="experiences">
+            <div class="container">
+                <h2 class="section-subtitle">Immerse Yourself in the Beauty of Our Expansive Lawns</h2>
+                <h1 class="section-title">Crafting Unforgettable Experiences Since Inception</h1>
+                <div class="experience-cards">
+                    <div class="card">
+
+                        <div class="imageDiv"
+                            style="  background: url('./assets/imgs/21.webp') center/cover no-repeat;">
+                        </div>
+                        <div class="card-content">
+                            <p>Imagine your dream wedding or special event unfolding against the backdrop of our lush,
+                                well-manicured lawns. Our picturesque setting provides the perfect canvas for creating
+                            </p>
+                            <span>Elevate your gatherings</span>
+                        </div>
+                    </div>
+                    <div class="card">
+
+                        <div class="imageDiv"
+                            style="  background: url('./assets/imgs/22.webp') center/cover no-repeat;">
+                        </div>
+
+                        <div class="card-content">
+                            <p>Experience the tranquility of our backyard oasis, complete with a charming table and
+                                chairs
+                                setup
+                                - the ideal spot for intimate gatherings and alfresco dining</p>
+                            <span>Indulge in the relaxed</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <!-- <img src="./assets/imgs/23.webp" alt="Lawn Experience 3"> -->
+                        <div class="imageDiv"
+                            style="  background: url('./assets/imgs/23.webp') center/cover no-repeat;">
+                        </div>
+                        <div class="card-content">
+                            <p>Explore the versatility of our lawns, where a golf cart adorned with a vibrant red
+                                umbrella
+                                adds
+                                a touch of whimsy to your event</p>
+                            <span>Discover the endless</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experience-section" id="experience-section">
+            <div class="experience-container">
+                <div class="upper-content">
+                    <div class="left-content">
+                        <h2>Crafting Unforgettable Experiences: <br> Humlog Lawns Redefines Event Elegance</h2>
+                        <div class="description-box">
+                            <div class="description-header">
+                                <h3>Indulge in the Beauty</h3>
+                                <div class="icon">
+                                    <img src="./assets/imgs/logo.png" alt="Icon">
+                                </div>
+                            </div>
+                            <p>Elevate your special occasions with our meticulously maintained lawns, where every detail
+                                is
+                                thoughtfully curated to ensure an unforgettable experience.</p>
+                            <p>Transform your vision into reality at Humlog Lawns, where our dedication to exceptional
+                                service
+                                and attention to detail shine through.</p>
+                            <div class="small-images">
+                                <img src="./assets/imgs/31.webp" alt="Small Image 1">
+                                <img src="./assets/imgs/32.webp" alt="Small Image 2">
+                                <img src="./assets/imgs/33.webp" alt="Small Image 3">
                             </div>
                         </div>
-                        <p>Elevate your special occasions with our meticulously maintained lawns, where every detail is
-                            thoughtfully curated to ensure an unforgettable experience.</p>
-                        <p>Transform your vision into reality at Humlog Lawns, where our dedication to exceptional
-                            service
-                            and attention to detail shine through.</p>
-                        <div class="small-images">
-                            <img src="./assets/imgs/31.webp" alt="Small Image 1">
-                            <img src="./assets/imgs/32.webp" alt="Small Image 2">
-                            <img src="./assets/imgs/33.webp" alt="Small Image 3">
-                        </div>
                     </div>
+                    <div class="right-content">
+                        <div class="image-container">
+                            <img src="./assets/imgs/34.webp" alt="Large Image">
+                        </div>
+                        <div class="cta-grid">
+                            <div class="cta-item">
+                                <h4>Timeless</h4>
+                                <span>Elegant</span>
+                            </div>
+                            <div class="cta-item">
+                                <h4>Refined</h4>
+                                <span>Exceptional</span>
+                            </div>
+                            <div class="cta-item">
+                                <h4>Explore</h4>
+                                <span>Discover More</span>
+                            </div>
+                            <div class="cta-item">
+                                <h4>Book Now</h4>
+                                <span>Inquire</span>
+                            </div>
+                            <div class="cta-item">
+                                <h4>Packages</h4>
+                                <span>Customization</span>
+                            </div>
+                            <div class="cta-item">
+                                <h4>Contact Us</h4>
+                                <span>Reach Out</span>
+                            </div>
+                        </div>
+                        <button class="customize-btn" id="customeizeEventBtn">Customize Your Event</button>
+                    </div>
+                </div>
+                <div class="lower-gallery">
+                    <img src="./assets/imgs/35.webp" alt="Gallery Image 1">
+                    <img src="./assets/imgs/36.webp" alt="Gallery Image 2">
+                    <img src="./assets/imgs/37.webp" alt="Gallery Image 3">
+                </div>
+            </div>
+        </section>
+
+        <section class="image-text-section">
+            <div class="container">
+                <div class="image-content">
+                    <img src="./assets/imgs/38.webp" alt="Lawn Image">
+                    <p class="image-caption">A Stunning Oasis for Your Celebration</p>
+                </div>
+                <div class="text-content">
+                    <h2>Immerse your guests in the serene beauty of our meticulously maintained lawns, where lush
+                        greenery
+                        and
+                        thoughtful design create the perfect backdrop for your event</h2>
+                    <p>At Humlog Lawns, we pride ourselves on our unwavering commitment to creating unforgettable
+                        experiences.
+                        Our lawns are the perfect setting for your special occasions.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="split-content-section" id="exploreSection">
+            <div class="container">
+                <div class="left-content">
+                    <h2>Elevate Your Celebrations: Discover the Exceptional Experience of Humlog Lawns</h2>
+                    <button class="explore-btn">Explore Our Offerings</button>
                 </div>
                 <div class="right-content">
-                    <div class="image-container">
-                        <img src="./assets/imgs/34.webp" alt="Large Image">
-                    </div>
-                    <div class="cta-grid">
-                        <div class="cta-item">
-                            <h4>Timeless</h4>
-                            <span>Elegant</span>
-                        </div>
-                        <div class="cta-item">
-                            <h4>Refined</h4>
-                            <span>Exceptional</span>
-                        </div>
-                        <div class="cta-item">
-                            <h4>Explore</h4>
-                            <span>Discover More</span>
-                        </div>
-                        <div class="cta-item">
-                            <h4>Book Now</h4>
-                            <span>Inquire</span>
-                        </div>
-                        <div class="cta-item">
-                            <h4>Packages</h4>
-                            <span>Customization</span>
-                        </div>
-                        <div class="cta-item">
-                            <h4>Contact Us</h4>
-                            <span>Reach Out</span>
-                        </div>
-                    </div>
-                    <button class="customize-btn" id="customeizeEventBtn">Customize Your Event</button>
+                    <h3>Nestled in the heart of the city, our stunning lawns provide a serene oasis for your most
+                        cherished
+                        occasions</h3>
+                    <p>At Humlog Lawns, we understand that every event is unique, and we are dedicated to tailoring our
+                        services
+                        to exceed your every expectation. Our expert team will work closely with you to bring your
+                        vision to
+                        life.</p>
                 </div>
             </div>
-            <div class="lower-gallery">
-                <img src="./assets/imgs/35.webp" alt="Gallery Image 1">
-                <img src="./assets/imgs/36.webp" alt="Gallery Image 2">
-                <img src="./assets/imgs/37.webp" alt="Gallery Image 3">
-            </div>
-        </div>
-    </section>
-
-    <section class="image-text-section">
-        <div class="container">
-            <div class="image-content">
-                <img src="./assets/imgs/38.webp" alt="Lawn Image">
-                <p class="image-caption">A Stunning Oasis for Your Celebration</p>
-            </div>
-            <div class="text-content">
-                <h2>Immerse your guests in the serene beauty of our meticulously maintained lawns, where lush greenery
-                    and
-                    thoughtful design create the perfect backdrop for your event</h2>
-                <p>At Humlog Lawns, we pride ourselves on our unwavering commitment to creating unforgettable
-                    experiences.
-                    Our lawns are the perfect setting for your special occasions.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section class="split-content-section" id="exploreSection">
-        <div class="container">
-            <div class="left-content">
-                <h2>Elevate Your Celebrations: Discover the Exceptional Experience of Humlog Lawns</h2>
-                <button class="explore-btn">Explore Our Offerings</button>
-            </div>
-            <div class="right-content">
-                <h3>Nestled in the heart of the city, our stunning lawns provide a serene oasis for your most cherished
-                    occasions</h3>
-                <p>At Humlog Lawns, we understand that every event is unique, and we are dedicated to tailoring our
-                    services
-                    to exceed your every expectation. Our expert team will work closely with you to bring your vision to
-                    life.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="packages-section" id="packages-section">
-        <div class="container">
-            <div class="carousel-container">
-                <div class="carousel">
-                    <div class="carousel-slide">
-                        <img src="./assets/imgs/37.webp" alt="Carousel Image 1">
+        <section class="packages-section" id="packages-section">
+            <div class="container">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="./assets/imgs/37.webp" alt="Carousel Image 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/imgs/37.webp" alt="Carousel Image 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/imgs/37.webp" alt="Carousel Image 3">
+                        </div>
                     </div>
-                    <div class="carousel-slide">
-                        <img src="./assets/imgs/37.webp" alt="Carousel Image 2">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="./assets/imgs/37.webp" alt="Carousel Image 3">
+                    <div class="carousel-controls">
+                        <button id="prev">‹</button>
+                        <button id="next">›</button>
                     </div>
                 </div>
-                <div class="carousel-controls">
-                    <button id="prev">‹</button>
-                    <button id="next">›</button>
+                <div class="text-content" id="packagesAndPricingSection">
+                    <h2>Packages & Pricing</h2>
+                    <p>Discover the unparalleled elegance and versatility of Humlog Lawns. Whether you're planning a
+                        grand
+                        wedding, an intimate gathering, or a corporate event, our meticulously maintained grounds and
+                        exceptional service will transform your vision into a reality. Explore our tailored packages and
+                        let
+                        us
+                        guide you in creating an unforgettable experience that celebrates your unique style and
+                        preferences.
+                    </p>
+                    <p>Inquire</p>
+                    <button class="book-now-btn" id="bookNowBtn">Book Now</button>
                 </div>
             </div>
-            <div class="text-content" id="packagesAndPricingSection">
-                <h2>Packages & Pricing</h2>
-                <p>Discover the unparalleled elegance and versatility of Humlog Lawns. Whether you're planning a grand
-                    wedding, an intimate gathering, or a corporate event, our meticulously maintained grounds and
-                    exceptional service will transform your vision into a reality. Explore our tailored packages and let
-                    us
-                    guide you in creating an unforgettable experience that celebrates your unique style and preferences.
-                </p>
-                <p>Inquire</p>
-                <button class="book-now-btn" id="bookNowBtn">Book Now</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about-get-in-touch-section">
-        <div class="container">
-            <div class="left-content">
-                <h2>About Us</h2>
-                <ul>
-                    <li>Our Mission</li>
-                    <li>Our Values</li>
-                    <li>Our Team</li>
-                    <li>Testimonials</li>
-                    <li>Contact</li>
-                </ul>
-                <p>At Humlog Lawns, we are passionate about creating exceptional event experiences that leave a lasting
-                    impression.</p>
+        <section class="about-get-in-touch-section">
+            <div class="container">
+                <div class="left-content">
+                    <h2>About Us</h2>
+                    <ul>
+                        <li>Our Mission</li>
+                        <li>Our Values</li>
+                        <li>Our Team</li>
+                        <li>Testimonials</li>
+                        <li>Contact</li>
+                    </ul>
+                    <p>At Humlog Lawns, we are passionate about creating exceptional event experiences that leave a
+                        lasting
+                        impression.</p>
+                </div>
+                <div class="right-content">
+                    <h3>Get in Touch</h3>
+                    <p>Whether you're planning a grand wedding, an intimate gathering, or a corporate event, our team at
+                        Humlog
+                        Lawns is committed to transforming your vision into a reality. Explore our meticulously
+                        maintained
+                        lawns, tailored packages, and exceptional service, and let us help you create an unforgettable
+                        celebration that exceeds your every expectation.</p>
+                    <p><a href="#" class="book-event-link">Book Your Event</a></p>
+                </div>
             </div>
-            <div class="right-content">
-                <h3>Get in Touch</h3>
-                <p>Whether you're planning a grand wedding, an intimate gathering, or a corporate event, our team at
-                    Humlog
-                    Lawns is committed to transforming your vision into a reality. Explore our meticulously maintained
-                    lawns, tailored packages, and exceptional service, and let us help you create an unforgettable
-                    celebration that exceeds your every expectation.</p>
-                <p><a href="#" class="book-event-link">Book Your Event</a></p>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <footer class="humlog-footer" id="contactUsSection">
         <div class="humlog-footer-container">
             <div class="humlog-footer-logo">
@@ -320,10 +341,6 @@
         </div>
     </footer>
 
-
-
-
-    <script src="script.js"></script>
 </body>
 
 </html>

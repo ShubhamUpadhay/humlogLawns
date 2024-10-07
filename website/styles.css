@@ -11,13 +11,17 @@ body {
 header {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
+}
+
+#contactUsDwebBtn {
+    cursor: pointer;
 }
 
 header.sticky {
@@ -144,9 +148,12 @@ nav {
     font-weight: bold;
 }
 
+
+
 .nav-links li a:hover {
     color: #000;
 }
+
 
 .explore-btn {
     background-color: #004d26;

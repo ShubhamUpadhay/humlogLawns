@@ -1,20 +1,3 @@
-const exploreBtn = document.getElementById("explore-btn");
-if (window.innerWidth <= 480) {
-  exploreBtn.innerText = "Let's Connect";
-}
-document.getElementById("explore-btn").addEventListener("click", function () {
-  // Check if the screen width is 480px or less
-  if (window.innerWidth <= 480) {
-    // Add your alternate event for small screens here
-    window.location.href = "tel:+917440569391";
-  } else {
-    // Existing event for larger screens
-    document
-      .getElementById("exploreSection")
-      .scrollIntoView({ behavior: "smooth" });
-  }
-});
-
 document.getElementById("home-button").addEventListener("click", function () {
   document.getElementById("homeSection").scrollIntoView({ behavior: "smooth" });
   alert("hello test ");

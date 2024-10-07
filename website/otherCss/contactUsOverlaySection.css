@@ -62,6 +62,11 @@
     color: #fff;
 }
 
+.call-btn i {
+    transform: rotate(180deg);
+    /* Slight rotation on hover */
+}
+
 .contactUsOverlaySection button:nth-child(2) {
     background-color: green;
     color: #fff;
@@ -74,7 +79,7 @@
 }
 
 .call-btn:hover i {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     /* Slight rotation on hover */
 }
 

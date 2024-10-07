@@ -35,11 +35,7 @@
 .contactUsOverlaySection div {
     display: flex;
     justify-content: center;
-    /* Center buttons horizontally */
-    gap: 10px;
-    /* Space between buttons */
-    margin-top: 50px;
-    /* Add margin to separate from close button */
+    gap: 15px;
 }
 
 .contactUsOverlaySection button {
@@ -91,20 +87,17 @@
 @media (max-width: 480px) {
     .contactUsOverlaySection div {
         flex-direction: column;
-        /* Stack buttons vertically */
         align-items: center;
-        /* Center buttons vertically */
+        background-color: aqua;
     }
 
     .contactUsOverlaySection button {
         width: 100%;
-        /* Make buttons full width for better stacking */
-        margin-bottom: 10px;
-        /* Add spacing between stacked buttons */
+        margin-bottom: 20px;
     }
 
     #contactUsOverlaySectionCloseBtn {
         top: 0px;
-        left: 300px;
+        left: 85%;
     }
 }
